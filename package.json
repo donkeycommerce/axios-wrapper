@@ -18,7 +18,9 @@
   "homepage": "https://github.com/donkeycommerce/axios-wrapper#readme",
   "devDependencies": {
     "@types/qs": "^6.9.5",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "axios": "0.21.1",
+    "qs": "6.9.4"
   },
   "files": [
     "lib",
