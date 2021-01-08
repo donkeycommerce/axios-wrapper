@@ -2,7 +2,7 @@
 
 ## How to
 
-1. 
+1. Import where you want
 ```javascript
 import Http from 'donkey-axios-wrapper/lib/Http'
 ```
