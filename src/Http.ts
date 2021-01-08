@@ -15,7 +15,7 @@ class Http {
 
   private static queue: HttpQueue = {}
 
-  private static apiURL: string = ''
+  public static apiURL: string = ''
 
   private constructor () {
     this.axios = axios.create({
