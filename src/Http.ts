@@ -15,19 +15,17 @@ class Http {
 
   private static queue: HttpQueue = {}
 
-  private constructor (apiURL: string) {
+  private static apiURL: string = ''
+
+  private constructor () {
     this.axios = axios.create({
-      baseURL: apiURL
+      baseURL: Http.apiURL
     })
   }
 
-  public static getInstance (apiURL?: string): Http {
+  public static getInstance (): Http {
     if (this.instance === undefined) {
-      if (apiURL) {
-        this.instance = new Http(apiURL)
-      } else {
-        throw new Error("Please provide an api url.")
-      }
+        this.instance = new Http()
     }
 
     return this.instance

@@ -6,8 +6,9 @@ declare class Http {
     private static instance;
     private axios;
     private static queue;
+    private static apiURL;
     private constructor();
-    static getInstance(apiURL?: string): Http;
+    static getInstance(): Http;
     static buildURLQuery(obj: any): string;
     static getToken(): string;
     static setToken(token: string): void;
